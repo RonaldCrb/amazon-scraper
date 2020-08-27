@@ -18,7 +18,7 @@ This is an HTTP server that exposes 2 endpoints.
 ```
 
 2. Amazon Movie data scrape `GET => http://localhost:8080/movie/amazon/{amazon_id}`
-```
+```json
 {
   "title": "Der Biber",
   "release_year": 2011,
