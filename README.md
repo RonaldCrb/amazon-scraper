@@ -1,6 +1,9 @@
 # SRE Code Challenge - JustWatch, Berlin
 
-This Application has been created by Ronald Alonzo with the purpose of solving the Code Challenge for the company JustWatch and succesfully apply for an Site Reliability Engineer position there.
+This Application has been created by Ronald Alonzo with the purpose of solving the Code Challenge for the company JustWatch and succesfully apply for an Site Reliability Engineer position there. The requirements have been designed as per the guidelines in the `SRE Challenge.pdf` document present on this repository.
+
+## Access
+As per recommended guidelines from JustWatch, this repository is private and has been shared with the accounts `falschparker82` and `zwopir`
 
 ## Instructions
 
@@ -9,23 +12,23 @@ This is an HTTP server that exposes 2 endpoints.
 1. HealthCheck `GET => http://localhost:8080/healtz`
 ```json
 {
-  status: "amazon-scraper is Healthy!",
-  timestamp: "2020-08-27 13:02:05"
+  "status": "amazon-scraper is Healthy!",
+  "timestamp": "2020-08-27 13:02:05"
 }
 ```
 
 2. Amazon Movie data scrape `GET => http://localhost:8080/movie/amazon/{amazon_id}`
 ```
 {
-  title: "Der Biber",
-  release_year: 2011,
-  actors: [
+  "title": "Der Biber",
+  "release_year": 2011,
+  "actors": [
     "Mel Gibson",
     "Jodie Foster",
     "Anton Yelchin"
   ],
-  poster: "https://images-na.ssl-images-amazon.com/images/I/81jpeIbNEbL._SX300_.jpg",
-  similar_ids: [
+  "poster": "https://images-na.ssl-images-amazon.com/images/I/81jpeIbNEbL._SX300_.jpg",
+  "similar_ids": [
     "B00HDXNJJ6",
     "B00FCLTFCG",
     "B00FCLKWVO",
